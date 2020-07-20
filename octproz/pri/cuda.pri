@@ -3,7 +3,7 @@ CUDA_SOURCES += $$SOURCEDIR/cuda_code.cu \
 
 #Path to cuda toolkit install
 unix{
-	CUDA_DIR = /usr/local/cuda
+	CUDA_DIR = /opt/cuda
 }
 win32{
 	CUDA_DIR = $$(CUDA_PATH)

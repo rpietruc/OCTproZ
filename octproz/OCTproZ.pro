@@ -23,8 +23,8 @@ win32{
 	INCLUDEPATH_CUDA += $$shell_path($$(QTDIR)\include\QtCore)
 	INCLUDEPATH_CUDA += $$shell_path($(QTDIR)\lib)
 unix{
-	INCLUDEPATH_CUDA += /usr/include/x86_64-linux-gnu/qt5	#todo: is there a more general way to access the qt include directory?
-	INCLUDEPATH_CUDA += /usr/include/x86_64-linux-gnu/qt5/QtCore
+	INCLUDEPATH_CUDA += /usr/include/qt  #todo: is there a more general way to access the qt include directory?
+	INCLUDEPATH_CUDA += /usr/include/qt/QtCore
 }
 
 message(cuda include_path is $$INCLUDEPATH_CUDA)
